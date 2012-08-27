@@ -35,7 +35,7 @@ beacon_flood_lcpa.c -
 		 ./beacon_flood_lcpa -i wlan1 -c 11 -s BRAD
 
 beacon_flood_raw.c -
-	Basic beacon flooder that uses sends raw packet bytes.
+	Basic beacon flooder that sends raw packet bytes.
 
 	To build:
 
