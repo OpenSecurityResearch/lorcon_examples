@@ -11,10 +11,7 @@
 #include <getopt.h>
 #include <string.h>
 
-#include <sys/time.h> // Needed for timestamp
-
 #include <lorcon2/lorcon.h> // For LORCON 
-#include <lorcon2/lorcon_packasm.h> // For metapack packet assembly
 
 void usage(char *argv[]) {
 	printf("\t-i <int> \tInterface\n");
