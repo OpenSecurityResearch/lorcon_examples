@@ -9,7 +9,6 @@
 
 #include <stdio.h>
 #include <getopt.h>
-#include <string.h>
 
 #include <lorcon2/lorcon.h> // For LORCON 
 
