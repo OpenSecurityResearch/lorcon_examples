@@ -89,7 +89,7 @@ int main(int argc, char *argv[]) {
 	driver = lorcon_auto_driver(interface);
 	
 	if (driver == NULL) {
-		printf("[!] Could not detmine the driver for %s\n",interface);
+		printf("[!] Could not determine the driver for %s\n",interface);
 		return -1;
 	} else {
 		printf("[+]\t Driver: %s\n",driver->name);
@@ -110,7 +110,7 @@ int main(int argc, char *argv[]) {
 		lorcon_free_driver_list(driver);
 	}
 
-	// Set the channel we'll be injection on
+	// Set the channel we'll be injecting on
 	lorcon_set_channel(context, channel);
 	printf("[+]\t Using channel: %d\n\n",channel);
 
