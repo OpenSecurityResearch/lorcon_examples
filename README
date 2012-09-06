@@ -54,7 +54,7 @@ beacon_flood_raw.py -
                 root@bt:~# wget http://pylorcon2.googlecode.com/files/PyLorcon2-0.1.tar.gz
 		root@bt:~# tar -zxvf PyLorcon2-0.1.tar.gz
 		root@bt:~# cd PyLorcon2-0.1
-		root@bt:~# python setup.py build
-		root@bt:~# python setup.py install
+		root@bt:~/PyLorcon2-0.1# python setup.py build
+		root@bt:~/PyLorcon2-0.1# python setup.py install
 	To run:
 		python beacon_flood_raw.py -i wlan1 -c 11	
