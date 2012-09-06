@@ -30,9 +30,6 @@ def usage():
 print sys.argv[0]," - Simple 802.11 beacon flooder"
 print "-----------------------------------------------------\n" 
 
-'''
-	This handles all of the command line arguments
-''' 
 # Beacon interval 
 interval = 100
 
@@ -54,6 +51,11 @@ packet = 	"\x80\x00\xff\xff\xff\xff\xff\xff" \
 		"\x50\xf2\x02"
 
 interface = channel = None 
+
+'''
+        This handles all of the command line arguments
+'''
+
 
 try:
 	opts, args = getopt.getopt(sys.argv[1:], "i:c:h",[])
