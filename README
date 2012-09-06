@@ -44,3 +44,17 @@ beacon_flood_raw.c -
 	To run:
 
 		./beacon_flood_raw -i wlan1 -c 11
+
+beacon_flood_raw.py - 
+	Basic beacon flooder that sends raw packet bytes using
+	PyLorcon2. 
+
+	To build:
+		root@bt:~# apt-get install libnl-dev
+                root@bt:~# wget http://pylorcon2.googlecode.com/files/PyLorcon2-0.1.tar.gz
+		root@bt:~# tar -zxvf PyLorcon2-0.1.tar.gz
+		root@bt:~# cd PyLorcon2-0.1
+		root@bt:~# python setup.py build
+		root@bt:~# python setup.py install
+	To run:
+		python beacon_flood_raw.py -i wlan1 -c 11	
