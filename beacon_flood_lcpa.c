@@ -101,9 +101,8 @@ int main(int argc, char *argv[]) {
 	*/
 
 	// Automatically determine the driver of the interface
-	driver = lorcon_auto_driver(interface);
 	
-	if (driver == NULL) {
+	if ( (driver = lorcon_auto_driver(interface)) == NULL) {
 		printf("[!] Could not determine the driver for %s\n",interface);
 		return -1;
 	} else {
