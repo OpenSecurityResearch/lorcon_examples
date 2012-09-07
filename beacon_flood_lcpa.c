@@ -33,7 +33,7 @@ int main(int argc, char *argv[]) {
 	lorcon_driver_t *drvlist, *driver; // Needed to set up interface/context
 	lorcon_t *context; // LORCON context
 
-	lcpa_metapack_t *metapack; // metapack for LORCOM packet assembly 
+	lcpa_metapack_t *metapack; // metapack for LORCON packet assembly 
 	lorcon_packet_t *txpack; // The raw packet to be sent
 
 	/* 
