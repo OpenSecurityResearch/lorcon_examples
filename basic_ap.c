@@ -6,7 +6,8 @@
 	basic_ap.c 
 	by brad.antoniewicz@foundstone.com	
 
-	Simple access point using LORCON
+	Simple access point using LORCON - Right
+	now its just doing 802.11 session establishment
 
 	THIS IS INCOMPLETE CODE!
 */
@@ -134,13 +135,6 @@ void *beacon(void *context) {
                // Wait interval before next beacon
                 usleep(ap_info_t.beacon_interval * 1000);
 
-		/*
-                // Print nice and pretty
-                printf("\033[K\r");
-                printf("[+] Sent %d frames, Hit CTRL + C to stop...", count);
-                fflush(stdout);
-                count++;
-		*/	
                 // Free the metapack
                 lcpa_free(metapack);
         }
@@ -299,10 +293,6 @@ int main(int argc, char *argv[]) {
 	lorcon_driver_t *drvlist, *driver; // Needed to set up interface/context
 	lorcon_t *context; // LORCON context
 
-	/* 
-		These are needed for the actual beacon frame
-	*/
-		
 	// BSSID and source MAC address
 	ap_info_t.src_mac = "\x00\xDE\xAD\xBE\xEF\x00";
 	ap_info_t.bssid = "\x00\xDE\xAD\xBE\xEF\x00";
@@ -312,7 +302,7 @@ int main(int argc, char *argv[]) {
         ap_info_t.got_assoc_req = 0;
         ap_info_t.got_auth_req = 0;
 
-	printf ("%s - Simple 802.11 Beacon Flooder\n", argv[0]);
+	printf ("%s - Simple 802.11 Access Point\n", argv[0]);
 	printf ("-----------------------------------------------------\n\n");
 
 	/* 
